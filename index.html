@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
+</style>
+
+<body>
+    <div class="loading">
+        <div class="loading1"> <img class="sunnyloading" src="Assets/sunny.png" width="60px" alt=""> </div>
+        <div class="loading2"><img class="cloudloading" src="Assets/cloud.png" width="60px" alt=""></div>
+        <button class="special"><a href="#">Uncloud to Enter</a></button>
+    </div>
+    <div class="page">
+
+
+
+        <header>
+            <nav>
+                <div class="logo">
+                    <div class="h2">
+                        <h2>Weatherly</h2>
+                    </div>
+                    <div class="img"> <img src="Assets/sunny.png" width="60px" alt=""> <img src="Assets/cloud.png"
+                            width="40px" alt=""> </div>
+                </div>
+                <div class="navbuttons">
+
+                    <button>About</button>
+                    <button>Climate-Change</button>
+                    <button>Contact</button>
+                    <button class="instagram"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24" fill="none">
+                            <path
+                                d="M2.5 12C2.5 7.52166 2.5 5.28249 3.89124 3.89124C5.28249 2.5 7.52166 2.5 12 2.5C16.4783 2.5 18.7175 2.5 20.1088 3.89124C21.5 5.28249 21.5 7.52166 21.5 12C21.5 16.4783 21.5 18.7175 20.1088 20.1088C18.7175 21.5 16.4783 21.5 12 21.5C7.52166 21.5 5.28249 21.5 3.89124 20.1088C2.5 18.7175 2.5 16.4783 2.5 12Z"
+                                stroke="#000000" stroke-width="1.5" stroke-linejoin="round" />
+                            <path
+                                d="M16.5 12C16.5 14.4853 14.4853 16.5 12 16.5C9.51472 16.5 7.5 14.4853 7.5 12C7.5 9.51472 9.51472 7.5 12 7.5C14.4853 7.5 16.5 9.51472 16.5 12Z"
+                                stroke="#000000" stroke-width="1.5" />
+                            <path d="M17.5078 6.5L17.4988 6.5" stroke="#000000" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg></button>
+
+                    <button class="youtube"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24" fill="none">
+                            <path
+                                d="M12 20.5C13.8097 20.5 15.5451 20.3212 17.1534 19.9934C19.1623 19.5839 20.1668 19.3791 21.0834 18.2006C22 17.0221 22 15.6693 22 12.9635V11.0365C22 8.33073 22 6.97787 21.0834 5.79937C20.1668 4.62088 19.1623 4.41613 17.1534 4.00662C15.5451 3.67877 13.8097 3.5 12 3.5C10.1903 3.5 8.45489 3.67877 6.84656 4.00662C4.83766 4.41613 3.83321 4.62088 2.9166 5.79937C2 6.97787 2 8.33073 2 11.0365V12.9635C2 15.6693 2 17.0221 2.9166 18.2006C3.83321 19.3791 4.83766 19.5839 6.84656 19.9934C8.45489 20.3212 10.1903 20.5 12 20.5Z"
+                                stroke="#000000" stroke-width="1.5" />
+                            <path
+                                d="M15.9621 12.3129C15.8137 12.9187 15.0241 13.3538 13.4449 14.2241C11.7272 15.1705 10.8684 15.6438 10.1728 15.4615C9.9372 15.3997 9.7202 15.2911 9.53799 15.1438C9 14.7089 9 13.8059 9 12C9 10.1941 9 9.29112 9.53799 8.85618C9.7202 8.70886 9.9372 8.60029 10.1728 8.53854C10.8684 8.35621 11.7272 8.82945 13.4449 9.77593C15.0241 10.6462 15.8137 11.0813 15.9621 11.6871C16.0126 11.8933 16.0126 12.1067 15.9621 12.3129Z"
+                                stroke="#000000" stroke-width="1.5" stroke-linejoin="round" />
+                        </svg></button>
+                    <button class="special"><a href="#">SIGNUP</a></button>
+                </div>
+
+            </nav>
+        </header>
+        <div class="page1">
+            <div class="page1left">
+
+                <h1>Weather Forecast</h1>
+                <p>Get the latest weather updates from around the world</p>
+                <canvas class="graph graph0"></canvas>
+                <canvas class="graph graph1"></canvas>
+                <canvas class="graph graph2"></canvas>
+                <div class="search">
+                    <input type="text" placeholder="Search..."> <button class="special"><a href="#">Search </a></button>
+                </div>
+            </div>
+            <div class="page1right">
+                <div class="card">
+                    <div class="up">
+                        <div class="cityinfo">
+                            <div class="city">London</div>
+                            <div class="hourly">Hourly Weather</div>
+                        </div>
+                        <div class="temp">12°C</div>
+                    </div>
+                    <div class="mid">
+                        <div class="midup">
+                            <div class=" info "><span><img src="Assets/sunrise.png" width="30px" alt=""></span><span
+                                    class="sunrise">6AM</span></div>
+                            <div class=" info "><span><img src="Assets/sunset.png" width="30px" alt=""></span>
+                                <span class="sunset">7PM</span>
+                            </div>
+                        </div>
+                        <div class="middown">
+                            <div class=" info"><span><img src="Assets/wind.png" width="30px" alt=""></span> <span
+                                    class="wind">18KMPH</span></div>
+                            <div class=" info"> <span><img src="Assets/humidity.png" width="30px" alt=""> </span><span
+                                    class="humidity">50%</span></div>
+                        </div>
+                    </div>
+                    <div class="down">
+                        <div class="c1 c forecast0">
+                            <h2 class="forecastDay0">Sat</h2>
+                            <span> <img class="forecastIcon0" src="Assets/sunny.png" width="40px" alt=""></span>
+                            <h2 class="forecastTemp0">30°C</h2>
+                        </div>
+                        <div class="c2 c forecast1">
+                            <h2 class="forecastDay1">Sat</h2>
+                            <span> <img class="forecastIcon1" src="Assets/clouds.png" width="40px" alt=""></span>
+                            <h2 class="forecastTemp1">22°C</h2>
+
+                        </div>
+                        <div class="c3 c forecast2">
+                            <h2 class="forecastDay2">Sat</h2>
+                            <span> <img class="forecastIcon2" src="Assets/sunny.png" width="40px" alt=""></span>
+                            <h2 class="forecastTemp2">35°C</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="page2">
+        <button class="special"> <a href="#">DON'T MISS </a></button>
+        <h2>Top weather moods from across the globe.</h2>
+        <div class="space"></div>
+        </button>
+        <div class="images">
+            <div class="news">
+                <div class="imgcontainer"> <img src="Assets/1.jpg" alt=""> <img class="play"
+                        src="Assets/play-button.png" alt="">
+                </div>
+                <h2>Clear</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores deleniti placeat animi
+                    exercitationem qui odit minus quia unde nostrum hic?</p>
+            </div>
+            <div class="news">
+                <div class="imgcontainer"> <img src="Assets/4.jpg" alt=""> <img src="Assets/play-button.png" alt="">
+                </div>
+                <h2>Cloudy</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores deleniti placeat animi
+                    exercitationem qui odit minus quia unde nostrum hic?</p>
+            </div>
+            <div class="news">
+                <div class="imgcontainer"> <img src="Assets/3.jpg" alt=""> <img src="Assets/play-button.png" alt="">
+                </div>
+
+                <h2>Lightning</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores deleniti placeat animi
+                    exercitationem qui odit minus quia unde nostrum hic?</p>
+            </div>
+
+        </div>
+    </div>
+    <div class="lastpage">
+        <div class="top">
+            <div class="subscribe">
+                <h2>Be updated with Weather Information</h2>
+            </div>
+            <div class="email"><input type="text" placeholder="Enter your Email"> <button class="special"><a
+                        href="#">Subscribe</a></button></div>
+        </div>
+        <div class="middle">
+            <div class="col1 col">
+                <h3>About the Team</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia, similique! Sunt illum provident
+                    reiciendis! Iste earum soluta accusamus dicta qui culpa, ex nam voluptates fugit ratione suscipit
+                    magni doloribus iure itaque, quos omnis facere ea.
+                </p>
+                <div class="socialmedia">
+                    <button class="handles instagram"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                height="24" viewBox="0 0 24 24" fill="none">
+                                <path
+                                    d="M2.5 12C2.5 7.52166 2.5 5.28249 3.89124 3.89124C5.28249 2.5 7.52166 2.5 12 2.5C16.4783 2.5 18.7175 2.5 20.1088 3.89124C21.5 5.28249 21.5 7.52166 21.5 12C21.5 16.4783 21.5 18.7175 20.1088 20.1088C18.7175 21.5 16.4783 21.5 12 21.5C7.52166 21.5 5.28249 21.5 3.89124 20.1088C2.5 18.7175 2.5 16.4783 2.5 12Z"
+                                    stroke="#000000" stroke-width="1.5" stroke-linejoin="round" />
+                                <path
+                                    d="M16.5 12C16.5 14.4853 14.4853 16.5 12 16.5C9.51472 16.5 7.5 14.4853 7.5 12C7.5 9.51472 9.51472 7.5 12 7.5C14.4853 7.5 16.5 9.51472 16.5 12Z"
+                                    stroke="#000000" stroke-width="1.5" />
+                                <path d="M17.5078 6.5L17.4988 6.5" stroke="#000000" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg></a></button><button class="handles facebook"><a href="#"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M6.18182 10.3333C5.20406 10.3333 5 10.5252 5 11.4444V13.1111C5 14.0304 5.20406 14.2222 6.18182 14.2222H8.54545V20.8889C8.54545 21.8081 8.74951 22 9.72727 22H12.0909C13.0687 22 13.2727 21.8081 13.2727 20.8889V14.2222H15.9267C16.6683 14.2222 16.8594 14.0867 17.0631 13.4164L17.5696 11.7497C17.9185 10.6014 17.7035 10.3333 16.4332 10.3333H13.2727V7.55556C13.2727 6.94191 13.8018 6.44444 14.4545 6.44444H17.8182C18.7959 6.44444 19 6.25259 19 5.33333V3.11111C19 2.19185 18.7959 2 17.8182 2H14.4545C11.191 2 8.54545 4.48731 8.54545 7.55556V10.3333H6.18182Z"
+                                    stroke="#000000" stroke-width="1.5" stroke-linejoin="round" />
+                            </svg></a></button><button class="handles x"><a href="#"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none">
+                                <path
+                                    d="M3 21L10.5484 13.4516M21 3L13.4516 10.5484M13.4516 10.5484L8 3H3L10.5484 13.4516M13.4516 10.5484L21 21H16L10.5484 13.4516"
+                                    stroke="#000000" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg></a></button><button class="handles youtube"><a href="#"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none">
+                                <path
+                                    d="M12 20.5C13.8097 20.5 15.5451 20.3212 17.1534 19.9934C19.1623 19.5839 20.1668 19.3791 21.0834 18.2006C22 17.0221 22 15.6693 22 12.9635V11.0365C22 8.33073 22 6.97787 21.0834 5.79937C20.1668 4.62088 19.1623 4.41613 17.1534 4.00662C15.5451 3.67877 13.8097 3.5 12 3.5C10.1903 3.5 8.45489 3.67877 6.84656 4.00662C4.83766 4.41613 3.83321 4.62088 2.9166 5.79937C2 6.97787 2 8.33073 2 11.0365V12.9635C2 15.6693 2 17.0221 2.9166 18.2006C3.83321 19.3791 4.83766 19.5839 6.84656 19.9934C8.45489 20.3212 10.1903 20.5 12 20.5Z"
+                                    stroke="#000000" stroke-width="1.5" />
+                                <path
+                                    d="M15.9621 12.3129C15.8137 12.9187 15.0241 13.3538 13.4449 14.2241C11.7272 15.1705 10.8684 15.6438 10.1728 15.4615C9.9372 15.3997 9.7202 15.2911 9.53799 15.1438C9 14.7089 9 13.8059 9 12C9 10.1941 9 9.29112 9.53799 8.85618C9.7202 8.70886 9.9372 8.60029 10.1728 8.53854C10.8684 8.35621 11.7272 8.82945 13.4449 9.77593C15.0241 10.6462 15.8137 11.0813 15.9621 11.6871C16.0126 11.8933 16.0126 12.1067 15.9621 12.3129Z"
+                                    stroke="#000000" stroke-width="1.5" stroke-linejoin="round" />
+                            </svg></a></button>
+                </div>
+            </div>
+            <div class="col2 col">
+                <h3>Our Links</h3>
+                <div class="list">
+                    <ul>
+                        <li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none">
+                                <path d="M9.00005 6C9.00005 6 15 10.4189 15 12C15 13.5812 9 18 9 18" stroke="#ffffff"
+                                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>Get Started</li>
+                        <li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none">
+                                <path d="M9.00005 6C9.00005 6 15 10.4189 15 12C15 13.5812 9 18 9 18" stroke="#ffffff"
+                                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>About Us</li>
+                        <li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none">
+                                <path d="M9.00005 6C9.00005 6 15 10.4189 15 12C15 13.5812 9 18 9 18" stroke="#ffffff"
+                                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>Privacy Policy</li>
+                        <li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none">
+                                <path d="M9.00005 6C9.00005 6 15 10.4189 15 12C15 13.5812 9 18 9 18" stroke="#ffffff"
+                                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>Terms & Condition</li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="col3 col">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path
+                                d="M22 12.5001C22 12.0087 21.9947 11.0172 21.9842 10.5244C21.9189 7.45886 21.8862 5.92609 20.7551 4.79066C19.6239 3.65523 18.0497 3.61568 14.9012 3.53657C12.9607 3.48781 11.0393 3.48781 9.09882 3.53656C5.95033 3.61566 4.37608 3.65521 3.24495 4.79065C2.11382 5.92608 2.08114 7.45885 2.01576 10.5244C1.99474 11.5101 1.99475 12.4899 2.01577 13.4756C2.08114 16.5412 2.11383 18.0739 3.24496 19.2094C4.37608 20.3448 5.95033 20.3843 9.09883 20.4634C9.90159 20.4836 10.7011 20.4954 11.5 20.4989"
+                                stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M7 8.5L9.94202 10.2394C11.6572 11.2535 12.3428 11.2535 14.058 10.2394L17 8.5"
+                                stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M22 17.5L14 17.5M22 17.5C22 16.7998 20.0057 15.4915 19.5 15M22 17.5C22 18.2002 20.0057 19.5085 19.5 20"
+                                stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg> cse230001070@iiti.ac.in</li>
+                    <li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path
+                                d="M5.25345 4.19584L4.02558 4.90813C3.03739 5.48137 2.54329 5.768 2.27164 6.24483C2 6.72165 2 7.30233 2 8.46368V16.6283C2 18.1542 2 18.9172 2.34226 19.3418C2.57001 19.6244 2.88916 19.8143 3.242 19.8773C3.77226 19.9719 4.42148 19.5953 5.71987 18.8421C6.60156 18.3306 7.45011 17.7994 8.50487 17.9435C8.98466 18.009 9.44231 18.2366 10.3576 18.6917L14.1715 20.588C14.9964 20.9982 15.004 21 15.9214 21H18C19.8856 21 20.8284 21 21.4142 20.4013C22 19.8026 22 18.8389 22 16.9117V10.1715C22 8.24423 22 7.2806 21.4142 6.68188C20.8284 6.08316 19.8856 6.08316 18 6.08316H15.9214C15.004 6.08316 14.9964 6.08139 14.1715 5.6712L10.8399 4.01463C9.44884 3.32297 8.75332 2.97714 8.01238 3.00117C7.27143 3.02521 6.59877 3.41542 5.25345 4.19584Z"
+                                stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M15 6.5V20.5" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" stroke-dasharray="1 3" />
+                            <path d="M8 3.5V17.5" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" stroke-dasharray="1 3" />
+                        </svg> D-69,ABC road,Indore</li>
+                    <li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path
+                                d="M3.77762 11.9424C2.8296 10.2893 2.37185 8.93948 2.09584 7.57121C1.68762 5.54758 2.62181 3.57081 4.16938 2.30947C4.82345 1.77638 5.57323 1.95852 5.96 2.6524L6.83318 4.21891C7.52529 5.46057 7.87134 6.08139 7.8027 6.73959C7.73407 7.39779 7.26737 7.93386 6.33397 9.00601L3.77762 11.9424ZM3.77762 11.9424C5.69651 15.2883 8.70784 18.3013 12.0576 20.2224M12.0576 20.2224C13.7107 21.1704 15.0605 21.6282 16.4288 21.9042C18.4524 22.3124 20.4292 21.3782 21.6905 19.8306C22.2236 19.1766 22.0415 18.4268 21.3476 18.04L19.7811 17.1668C18.5394 16.4747 17.9186 16.1287 17.2604 16.1973C16.6022 16.2659 16.0661 16.7326 14.994 17.666L12.0576 20.2224Z"
+                                stroke="#ffffff" stroke-width="1.5" stroke-linejoin="round" />
+                        </svg>0699669960</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="chart.js"></script>
+</body>
+
+</html>
