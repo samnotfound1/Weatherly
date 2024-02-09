@@ -1,4 +1,5 @@
-Solo project made by Sameer Choudhary.
+Solo project made by Sameer Choudhary.   
+link to my website: https://samnotfound1.github.io/Weatherly/
 
 The website uses Open weather's API to display current weather conditions and forecast them for 3 upcoming days using a graph plot using Chart.js .
 
